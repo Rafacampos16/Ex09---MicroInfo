@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boostrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        :root {
+            --cor1: #c0beb7;
+            --cor2: #b2b0a7;
+            --cor3: #2a272c;
+            --cor4: #e3e1e4;
+            --cor5: #e3dfca;
+            --cor6: #7f7c67;
+            --cor7: #7a7788;
+            --cor8: #5e5156;
+            --cor9: #676549;
+            --cor10: #8f8189;
+            --cor11: #545c54;
+        }
+    
+        .navbar {
+            background-color: var(--cor3);
+            /* Utilize a variável cor1 definida no :root */
+        }
+    
+        .navbar-brand,
+        .nav-link {
+            color: var(--cor4);
+            /* Define a cor do texto usando a variável cor5 */
+        }
+    
+        footer {
+            background-color: var(--cor1);
+            color: var(--cor4);
+        }
+    
+        header {
+            background-image: url(img/mt.gif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            height: 550px;
+        }
+
+        .title {
+            color: var(--cor3);
+            align-items: center;
+            justify-content: center;
+            padding-top: 210px;
+            padding-left: 100px;
+            text-shadow: 3px 3px 3px var(--cor11);
+            font-size: 80px;
+        }
+
+        .sub {
+            font-size: 24px;
+            font-weight: 700;
+            padding-left: 450px;
+        }
+    
+        main {
+            background-color: var(--cor5);
+        }
+    
+        .grif {
+            background-color: var(--cor2);
+            border-left: 5px solid var(--cor3);
+            /* Cor e espessura da borda */
+            padding-left: 10px;
+            height: 60px;
+            padding-top: 5px;
+        }
+    
+        .cardss {
+            background-color: var(--cor2);
+        }
+    
+        .card-body {
+            background-color: var(--cor2);
+            text-align: justify;
+        }
+    
+        .card {
+            border: 1px solid var(--cor3);
+        }
+    
+        .container {
+            text-align: justify;
+        }
+    
+        .btn {
+            background-color: var(--cor3);
+            color: var(--cor4);
+        }
+    
+        footer {
+            background-color: var(--cor3);
+            color: var(--cor5);
+        }
+    
+        /* Media query para dispositivos menores, como celulares */
+        @media (max-width: 568px) {
+
+            header {
+            background-position: end;
+        }
+
+            .title {
+                font-size: 46px;
+            }
+    
+            .sub {
+                font-size: 26px;
+                padding-left: 250px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .header{
+                background-position: end;
+            }
+        }
+    </style>
+    
+<body>
+    <nav class="navbar navbar-expand-lg bg">
+        <div class="container-fluid">
+            <!-- Alinhamento à esquerda -->
+            <a class="navbar-brand" href="#">
+                <img src="img/icon.jpg" alt="" class="rounded-circle" width="30" height="30">
+            </a>
+            <!-- Conteúdo do menu -->
+            <div class="d-lg-flex align-items-center">
+                <a class="nav-link me-3 d-inline-flex" aria-current="page" href="#">Home</a>
+                <a class="nav-link me-3 d-inline-flex" href="#">Formação Acadêmica</a>
+                <a class="nav-link d-inline-flex" href="#">Experiência</a>
+            </div>
+        </div>
+    </nav>
+    
+    <header>
+        <h1 class="title text-decoration-underline">DISCIPLINA</h1>
+        <h2 class="sub">Vitória</h2>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="pt-5">
+                <h1 class="grif">O QUE É DISCIPLINA PROFISSIONAL?</h1>
+            </div>
+            <p class="text-end h6">Artigo completo disponível em: inttps://blog.portalpos.com-beldiscsite-profissional
+            </p>
+            <div class="pt-3">
+                <p class="m-3">A disciplina profissional é a habilidade de manter a consistência em comportamentos que
+                    te levem a
+                    alcançar as suas metas de trabalho e de carreira.</p>
+                <p class="ms-3">Essa competência permite que você foque em tarefas ou objetivos com o propósito de
+                    atingir bons
+                    resultados. Mas não é só isso.</p>
+                <p class="ms-3">A disciplina profissional também é uma habilidade que permite reconhecer seus pontos
+                    fortes e tracos
+                    e superar desafios. Quando você a desenvolve, toma-se capaz de focar intencionalmente em um
+                    propósito que te ajudará a ser melhor</p>
+                <p class="ms-3">Algumas das caracteristicas das pessoas que costumam ter disciplina profissional são a
+                    motivação, a
+                    ambição, o senso de direcionamento e a responsabilidade.</p>
+            </div>
+
+            <div class="pt-3">
+                <h1 class="grif">COMO DESENVOLVER DISCIPLINA PROFISSIONAL?</h1>
+            </div>
+            <div class="pt-3">
+                <h4 class="ms-3 mt-2"><strong>Transforme o hábito em prática</strong></h4>
+                <p class="ms-3">Desenvolver disciplina profissional não é diferente de desenvolver qualquer outro
+                    hábito. Isso significa que você precisa focar na prática diária para torná-la parte da sua rotina.
+                </p>
+                <p class="ms-3">Para te ajudar, temos uma sugestão procure dividir as suas horas de trabalho em tópicos
+                    ou assuntos.</p>
+                <p class="ms-3">Você também pode se organizar dividindo suas metas de longo prazo em objetivos menores.
+                    E não se esqueça de comemorar ao alcançá-las</p>
+                <p class="ms-3">Quando você atinge uma meta e celebra uma conquista, o seu cérebro entende como uma
+                    recompensa e vai querer cada vez mais essa sensação.</p>
+
+                <h4 class="ms-3 mt-2"><strong>Esforce-se para cumprir suas metas</strong></h4>
+                <p class="ms-3">Sabemos que criar e manter hábitos é muito importante, mas não dá para dizer que essa
+                    tarefa é fácil.</p>
+                <p class="ms-3">Alguns dias, a motivação não vai ser tão alta como em outros, e realizar algumas
+                    atividades pode ficar mais complicado. No entanto, é nesses momentos que você mais precisará
+                    resgatar o seu senso de ambição e a sua resiliência.</p>
+                <p class="ms-3">Uma boa maneira de conseguir fazer isso é visualizar os resultados que aquelas
+                    atividades podem trazer para você. Quem sabe pode ser um aumento de salário que você está precisando
+                    para conquistar algo, uma promoção ou um outro tipo de reconhecimento que você está esperando.</p>
+                <p class="ms-3">Visualizar essas 'recompensas" pode aumentar a sua motivação e dar aquele empurrãozinho
+                    que vai te fazer persistir na tarefa.</p>
+                <p class="ms-3">Outra dica que vai te ajudar a cumprir suas atividades é identificar os momentos do dia
+                    em que você é mais produtivo e se planejar em tomo deles. Por exemplo, se você consegue realizar
+                    mais tarefas no periodo da mannä, separe esse horário para fazer as mais complexas e deixe o periodo
+                    da tarde para aquelas que não exigem tanta concentração e esforço.</p>
+
+                <h4 class="ms-3 mt-2"><strong>Afaste-se de distrações</strong></h4>
+                <p class="ms-3">Chegamos a um ponto crítico da disciplina, que é conseguir resistir às distrações que
+                    estão ao nosso redor.</p>
+                <p class="ms-3">Você já deve saber que as redes sociais e outros aplicativos do nosso smartphone são
+                    verdadeiras tentações. Mesmo assim, não resiste em dar uma conferida vez ou outra, não é verdade?
+                </p>
+                <p class="ms-3">Isso não e exatamente um problema, mas quando você não consegue focar nas suas tarefas
+                    porque a sua concentração e interrompida por notificações ou pelo impulso de conferir as novidades,
+                    a história é outra.</p>
+                <p class="ms-3">Se esse é o seu caso, que tal guardar o seu smartphone fora do alcance da sua vista ou
+                    separar uma ou duas horas para ficar sem mexer nele?</p>
+                <p class="ms-3">Outra coisa que pode ajudar é bloquear um período da sua agenda apenas para focar nas
+                    suas entregas.</p>
+                <p class="ms-3">Organizar o seu local de trabalho e a sua mesa também ajuda a manter o foco no trabalho.
+                </p>
+                <p class="ms-3"><strong>Artigo completo disponível em:</strong>
+                    https://blog.portalpos.com.br/disciplina-profissional/</p>
+            </div>
+        </div>
+
+        <div class="cardss py-3">
+            <section class="row center justify-content-center align-items-center">
+
+                <div class="col-12 text-center">
+                    <h2 class="pt-3 h1">CARDS</h2>
+                </div>
+
+                <div class="p-5 row">
+
+                    <div class="col-lg-4">
+                        <div>
+                            <div class="card">
+                                <img src="img/card1.jpg!d" class="card-img-top" alt="..." style="height: 200px;">
+                                <div class="card-body">
+                                    <p class="card-text">&nbsp &nbsp &nbsp Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Ullam magni esse debitis a sint deleniti numquam ipsum aliquid
+                                        beatae. Voluptatum ipsum deserunt vitae laborum, a labore? Quia temporibus
+                                        adipisci non.</p>
+                                    <div class="text-end">
+                                        <a href="#" class="btn">Ler mais...</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div>
+                            <div class="card">
+                                <img src="img/card2.webp" class="card-img-top" alt="..." style="height: 200px;">
+                                <div class="card-body">
+                                    <p class="card-text">&nbsp &nbsp &nbsp Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Ullam magni esse debitis a sint deleniti numquam ipsum aliquid
+                                        beatae. Voluptatum ipsum deserunt vitae laborum, a labore? Quia temporibus
+                                        adipisci non.</p>
+                                    <div class="text-end">
+                                        <a href="#" class="btn">Ler mais...</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div>
+                            <div class="card">
+                                <img src="img/card.3.jpg" class="card-img-top" alt="..." style="height: 200px;">
+                                <div class="card-body">
+                                    <p class="card-text">&nbsp &nbsp &nbsp Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Ullam magni esse debitis a sint deleniti numquam ipsum aliquid
+                                        beatae. Voluptatum ipsum deserunt vitae laborum, a labore? Quia temporibus
+                                        adipisci non.</p>
+                                    <div class="text-end">
+                                        <a href="#" class="btn">Ler mais...</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+
+    <footer class="mt-auto pt-3">
+        <div class="container d-flex justify-content-end">
+            <ul class="list-inline">
+                <li class="list-inline-item">Youtube</li>
+                <li class="list-inline-item">Github</li>
+                <li class="list-inline-item">Facebook</li>
+                <li class="list-inline-item">Twitter</li>
+                <li class="list-inline-item">Instagram</li>
+            </ul>
+        </div>
+    </footer>    
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/app.js"></script>
+
+</html>
